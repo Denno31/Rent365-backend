@@ -24,3 +24,4 @@ DISABLE_COLLECTSTATIC=1`.
 7. Run the applocation
 
 ## API EndPoints
+https://documenter.getpostman.com/view/6565910/TVRn4nab
