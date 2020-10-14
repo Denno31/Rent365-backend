@@ -16,3 +16,4 @@ def item_detail(request,item_id):
     serializer = ItemSerializer(item,many=False)
 
     return Response(serializer.data)
+
