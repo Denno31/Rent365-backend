@@ -24,4 +24,45 @@ DISABLE_COLLECTSTATIC=1`.
 7. Run the applocation
 
 ## API EndPoints
-https://documenter.getpostman.com/view/6565910/TVRn4nab
+- https://documenter.getpostman.com/view/6565910/TVRn4nab
+- https://api-rent365.herokuapp.com:- API link
+
+1. `/shop/api/items-list`, Returns an array of items<br/> Method:- `GET`<br/> 
+    Result:- `[ {
+        "id": 1,
+        "title": "Nike Sneakers",
+        "price": 40,
+        "discount_price": null,
+        "category": "OW",
+        "slug": "sneaker",
+        "description": "Nice sneakers for that special event",
+        "item_pic": "/media/uploads/bulb.jpg"}]`
+2. `/shop/api/item-detail/<int:id>`, Return a single item<br/> Method:- `GET`<br/>  Result:- `{
+        "id": 1,
+        "title": "Nike Sneakers",
+        "price": 40,
+        "discount_price": null,
+        "category": "OW",
+        "slug": "sneaker",
+        "description": "Nice sneakers for that special event",
+        "item_pic": "/media/uploads/bulb.jpg"}`
+3. `/accounts/api/auth/register`, Registers a user<br/>  Method:- `POST`<br/>  postData:-`{"username":"jane",
+    "email":"jane@gmail.com",
+    "password":"123456"}`<br/>Result:- `{
+    "user": {
+        "id": 2,
+        "username": "jane",
+        "email": "jane@gmail.com"
+    },
+    "token": <>
+}`
+4. `/accounts/api/auth/login`, Logs in a user<br/>  Method:- `POST`<br/>  postData:-`{"username":"jane",    
+    "password":"123456"}`<br/>Result:- `{
+    "user": {
+        "id": 2,
+        "username": "jane",
+        "email": "jane@gmail.com"
+    },
+    "token": <>
+}`
+5. 
