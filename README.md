@@ -65,4 +65,6 @@ DISABLE_COLLECTSTATIC=1`.
     },
     "token": <>
 }`
-5. 
+5. `/shop/api/item/:item_id/add_to_cart`, adds item to cart, takes item id as a param<br/> Method:- `POST` <br/> Headers:- Authorization Token --your token--.
+6. `/shop/api/item/all_items`, gets all items in the cart, <br/> Method:- `GET`<br/> Headers:- Authorization Token --your token--.
+7. `/shop/api/item/:item_id/remove_from_cart`, adds item to cart, takes item id as a param<br/> Method:- `POST` <br/> Headers:- Authorization Token --your token--.
